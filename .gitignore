@@ -1,0 +1,8 @@
+node_modules/
+dist/
+playwright-results/
+.env
+.env.*
+*.local
+*.log
+coverage/
