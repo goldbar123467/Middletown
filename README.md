@@ -121,9 +121,11 @@ npm run dev                 # Start Vite
 npm run lint                # ESLint
 npm run test                # Node regression/data/engine/RL policy tests
 npm run test:browser        # Playwright UI and end-state smoke tests
+npm run test:mobile         # Heavy phone-viewport mobile E2E
 npm run build               # Production build
 npm run qa                  # lint + test + build
 npm run playtest:rl         # Full 100-quarter Playwright RL playthrough
+npm run playtest:rl:mobile  # Full 100-quarter mobile RL playthrough
 npm run playtest:rl:matrix  # Seeded normal/hard RL matrix
 npm run lines               # Count project lines
 ```
@@ -134,7 +136,9 @@ Latest local verification:
 
 - `npm run qa`: pass
 - `npm run test:browser`: pass in Microsoft Edge
+- `npm run test:mobile`: pass in Microsoft Edge
 - `npm run playtest:rl`: pass, 100/100 quarters, A 100/100
+- `npm run playtest:rl:mobile`: pass, 100/100 quarters, A 100/100
 - Hard 100-quarter RL seed `bad-winter-full`: pass, A 100/100
 - `npm run playtest:rl:matrix`: pass
 - `npm run lines`: 100,147 lines

@@ -276,7 +276,7 @@ export function reactionForEventChoice(state, event, option, source = "event", m
     : "";
 
   return {
-    id: `reaction_${state.turn}_event_${state.reactions?.length ?? 0}`,
+    id: `reaction_${state.turn}_${source}_${event?.id ?? "event"}`,
     turn: state.turn,
     type: "event",
     sentiment,

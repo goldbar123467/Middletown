@@ -31,7 +31,9 @@
     "preview": "vite preview",
     "test": "node tests/run-tests.mjs",
     "test:browser": "node tests/playwright/uiSmoke.mjs && node tests/playwright/endStateSmoke.mjs",
+    "test:mobile": "node tests/playwright/mobileE2e.mjs",
     "playtest:rl": "node tests/playwright/runMiddletownRlPlaytest.mjs",
+    "playtest:rl:mobile": "node tests/playwright/runMobileRlPlaytest.mjs",
     "playtest:rl:matrix": "node tests/playwright/runRlMatrix.mjs",
     "qa": "npm run lint && npm run test && npm run build",
     "lines": "node tools/count-lines.mjs"
